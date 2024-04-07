@@ -40,8 +40,8 @@ def main_bg(main_bg):
 main_bg('back.png')
 
 with st.sidebar:
-    choose = option_menu("教师端", ["首页", "课程管理", "学情评价","AI反馈"],
-                         icons=['cloud-upload', 'person lines fill', 'app-indicator', "boombox-fill"],
+    choose = option_menu("教师端", ["首页", "知识库补充" ,"课程管理", "学情评价","AI反馈"],
+                         icons=['bar-chart', 'cloud-upload', 'person lines fill', 'app-indicator', "boombox-fill"],
                          menu_icon="list", default_index=0,
                          styles={
         "container": {"padding": "5!important", "background-color": "#dceef8"}, # 整体颜色
@@ -52,38 +52,26 @@ with st.sidebar:
 
 ## ==================================  数据监控与分析  ==========================================
 if choose == "首页":
-    latest_iteration1 = st.empty() ##  显示进度
-    bar1 = st.progress(0)
-    for i in range(100): # Update the progress bar with each iteration.
-        latest_iteration1.text(f'加载进度 {i + 1} %')
-        bar1.progress(i + 1)
-        time.sleep(0.01)
+    with st.spinner('超星小助手正在努力加载中......'):
+        time.sleep(1)
+
+elif choose == "知识库补充":
+    with st.spinner('超星小助手正在努力加载中......'):
+        time.sleep(1)
 
 elif choose == "课程管理":
-    latest_iteration1 = st.empty() ##  显示进度
-    bar1 = st.progress(0)
-    for i in range(100): # Update the progress bar with each iteration.
-        latest_iteration1.text(f'加载进度 {i + 1} %')
-        bar1.progress(i + 1)
-        time.sleep(0.01)
+    with st.spinner('超星小助手正在努力加载中......'):
+        time.sleep(1)
 
 
 elif choose == "学情评价":
-    latest_iteration1 = st.empty() ##  显示进度
-    bar1 = st.progress(0)
-    for i in range(100): # Update the progress bar with each iteration.
-        latest_iteration1.text(f'加载进度 {i + 1} %')
-        bar1.progress(i + 1)
-        time.sleep(0.01)
+    with st.spinner('超星小助手正在努力加载中......'):
+        time.sleep(1)
 
 
 elif choose == "AI反馈":
-    latest_iteration1 = st.empty() ##  显示进度
-    bar1 = st.progress(0)
-    for i in range(100): # Update the progress bar with each iteration.
-        latest_iteration1.text(f'加载进度 {i + 1} %')
-        bar1.progress(i + 1)
-        time.sleep(0.01)
+    with st.spinner('超星小助手正在努力加载中......'):
+        time.sleep(1)
 
 
 
