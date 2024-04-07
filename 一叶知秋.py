@@ -42,7 +42,6 @@ if choose == "首页":
         latest_iteration1.text(f'加载进度 {i + 1} %')
         bar1.progress(i + 1)
         time.sleep(0.01)
-    st.success('1')
 
 elif choose == "课程管理":
     latest_iteration1 = st.empty() ##  显示进度
@@ -51,7 +50,6 @@ elif choose == "课程管理":
         latest_iteration1.text(f'加载进度 {i + 1} %')
         bar1.progress(i + 1)
         time.sleep(0.01)
-    st.success('1')
 
 
 elif choose == "学情评价":
@@ -61,7 +59,6 @@ elif choose == "学情评价":
         latest_iteration1.text(f'加载进度 {i + 1} %')
         bar1.progress(i + 1)
         time.sleep(0.01)
-    st.success('1')
 
 
 elif choose == "AI反馈":
@@ -71,7 +68,6 @@ elif choose == "AI反馈":
         latest_iteration1.text(f'加载进度 {i + 1} %')
         bar1.progress(i + 1)
         time.sleep(0.01)
-    st.success('1')
 
 
 
