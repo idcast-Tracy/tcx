@@ -36,44 +36,41 @@ with st.sidebar:
 
 ## ==================================  数据监控与分析  ==========================================
 if choose == "首页":
-    # latest_iteration = st.empty() ##  显示进度
-    # bar = st.progress(0)
-    # for i in range(100): # Update the progress bar with each iteration.
-    #     latest_iteration.text(f'Iteration {i + 1}')
-    #     bar.progress(i + 1)
-    #     time.sleep(0.00000000000000000000000000000000000000000000001)
-    my_bar = st.progress(0)
-    for percent_complete in range(100):
-        my_bar.progress(percent_complete + 1)
-    # st.success('1')
+    latest_iteration1 = st.empty() ##  显示进度
+    bar1 = st.progress(0)
+    for i in range(100): # Update the progress bar with each iteration.
+        latest_iteration1.text(f'加载进度 {i + 1} %')
+        bar1.progress(i + 1)
+        time.sleep(0.01)
+    st.success('1')
 
 elif choose == "课程管理":
-    latest_iteration = st.empty() ##  显示进度
-    bar = st.progress(0)
+    latest_iteration1 = st.empty() ##  显示进度
+    bar1 = st.progress(0)
     for i in range(100): # Update the progress bar with each iteration.
-        latest_iteration.text(f'Iteration {i + 1}')
-        bar.progress(i + 1)
-        time.sleep(0.00000000000000000000000000000000000000000000001)
+        latest_iteration1.text(f'加载进度 {i + 1} %')
+        bar1.progress(i + 1)
+        time.sleep(0.01)
     st.success('1')
 
 
 elif choose == "学情评价":
-    latest_iteration = st.empty() ##  显示进度
-    bar = st.progress(0)
+    latest_iteration1 = st.empty() ##  显示进度
+    bar1 = st.progress(0)
     for i in range(100): # Update the progress bar with each iteration.
-        latest_iteration.text(f'Iteration {i + 1}')
-        bar.progress(i + 1)
-        time.sleep(0.00000000000000000000000000000000000000000000001)
+        latest_iteration1.text(f'加载进度 {i + 1} %')
+        bar1.progress(i + 1)
+        time.sleep(0.01)
     st.success('1')
 
 
 elif choose == "AI反馈":
-    latest_iteration = st.empty() ##  显示进度
-    bar = st.progress(0)
+    latest_iteration1 = st.empty() ##  显示进度
+    bar1 = st.progress(0)
     for i in range(100): # Update the progress bar with each iteration.
-        latest_iteration.text(f'Iteration {i + 1}')
-        bar.progress(i + 1)
-        time.sleep(0.00000000000000000000000000000000000000000000001)
+        latest_iteration1.text(f'加载进度 {i + 1} %')
+        bar1.progress(i + 1)
+        time.sleep(0.01)
     st.success('1')
 
 
