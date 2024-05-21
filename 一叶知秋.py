@@ -9,7 +9,7 @@ import os
 import time
 # os.chdir(r'C:\Users\Tracy\Desktop\知识图谱2.0') # 设定文件路径
 # 设置页面配置
-st.set_page_config(page_title="CX-copilot 2.0", page_icon="⭐", layout="wide")
+st.set_page_config(page_title="CX-copilot 1.0", page_icon="⭐", layout="wide")
 # 通过 css样式隐藏主菜单和页脚
 hide_menu = '''
 <style>
