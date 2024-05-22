@@ -7,6 +7,7 @@ from streamlit_option_menu import option_menu
 import pandas as pd
 import os
 import time
+import base64
 # os.chdir(r'C:\Users\Tracy\Desktop\知识图谱2.0') # 设定文件路径
 # 设置页面配置
 st.set_page_config(page_title="CX-copilot 1.0", page_icon="⭐", layout="wide")
