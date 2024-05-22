@@ -18,6 +18,21 @@ footer {visibility:hidden;}
 '''
 st.markdown(hide_menu,unsafe_allow_html=True)
 
+def main_bg(main_bg):
+    main_bg_ext = "back.png"
+    st.markdown(
+        f"""
+         <style>
+         .stApp {{
+             background: url(data:image/{main_bg_ext};base64,{base64.b64encode(open(main_bg, "rb").read()).decode()});
+             background-size: cover
+         }}
+         </style>
+         """,
+        unsafe_allow_html=True
+    )
+# 调用
+main_bg('back.png')
 
 with st.sidebar:
     choose = option_menu("教师端", ["首页", "知识库补充" ,"课程管理", "学情评价","AI反馈","知识图谱"],
